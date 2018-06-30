@@ -35,7 +35,6 @@ def process(tpl_file, target_filename, filemode, **params):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('datasetname')
     parser.add_argument('base_image_name')
     parser.add_argument('--docker-bin', default='tyk')
     parser.add_argument('--dockerd-hostname', default='localhost')
