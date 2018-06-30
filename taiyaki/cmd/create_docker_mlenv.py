@@ -5,9 +5,9 @@ import stat
 import jinja2
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+BASE_DIR = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 _env = jinja2.Environment(
-    loader = jinja2.FileSystemLoader(os.path.join(BASE_DIR, 'templates'), encoding='utf-8')
+    loader = jinja2.FileSystemLoader(os.path.join(BASE_DIR, '_templates'), encoding='utf-8')
 )
 
 
