@@ -10,3 +10,5 @@ __pycache__
 pip-selfcheck.json
 utilcmd
 env.sh
+resetenv.sh
+Dockerfile
