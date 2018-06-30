@@ -13,7 +13,6 @@ bin
 share
 pip-selfcheck.json
 
-cmd
 update_package.sh
 
 *.db
