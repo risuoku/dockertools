@@ -62,6 +62,7 @@ def main():
     # generate target files and directories
     process('utilcmd__tyk.tpl', ns.docker_bin, 'executable', hostname=ns.dockerd_hostname)
     process('env.sh.tpl', 'env.sh', None, docker_bin=ns.docker_bin)
+    process('resetenv.sh.tpl', 'resetenv.sh', None)
     process('_dockerignore.tpl', '.dockerignore', None)
     process('utilcmd__build.sh.tpl', 'build.sh', 'executable', 
         docker_bin=ns.docker_bin,
