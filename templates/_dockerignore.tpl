@@ -1,0 +1,12 @@
+bin
+include
+lib
+man
+result
+*.py[co]
+*.sqlite
+__pycache__
+.ipynb_checkpoints
+pip-selfcheck.json
+utilcmd
+env.sh

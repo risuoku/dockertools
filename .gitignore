@@ -1,0 +1,20 @@
+*.egg-info
+*.pot
+*.py[co]
+__pycache__
+MANIFEST
+dist/
+build/
+
+# for virtualenv
+lib
+include
+bin
+share
+pip-selfcheck.json
+
+cmd
+update_package.sh
+
+*.db
+man
