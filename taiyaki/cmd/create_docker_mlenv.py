@@ -67,7 +67,7 @@ def main():
         docker_bin=ns.docker_bin,
         app_image_name=app_image_name
     )
-    process('utilcmd__run_docker.tpl', 'run_docker', 'executable', 
+    process('utilcmd__run_docker.tpl', 'run_docker', 'executable',
         app_image_name=app_image_name,
         volume_image_name=volume_image_name,
         docker_bin=ns.docker_bin,
@@ -81,6 +81,10 @@ def main():
     process('Dockerfile.tpl', 'Dockerfile', None, 
         base_image_name=ns.base_image_name,
         docker_working_dir=ns.docker_working_dir
+    )
+    process('utilcmd__drcp.sh.tpl', 'drcp.sh', 'executable', 
+        docker_working_dir=ns.docker_working_dir,
+        docker_bin=ns.docker_bin
     )
 
 
